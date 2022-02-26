@@ -128,16 +128,16 @@ public class DemoqaTests {
         SoftAssertions softAssert = new SoftAssertions();
 
         softAssert.assertThat(driver.findElement(By.id("example-modal-sizes-title-lg")).getText()).isEqualTo("Thanks for submitting the form");
-        softAssert.assertThat(driver.findElement(By.xpath("//tbody/tr[1]/td[2]")).getText()).isEqualTo(firstName + " "+ lastName);
+        softAssert.assertThat(driver.findElement(By.xpath("//tbody/tr[1]/td[2]")).getText()).isEqualTo(firstName + " " + lastName);
         softAssert.assertThat(driver.findElement(By.xpath("//tbody/tr[2]/td[2]")).getText()).isEqualTo(email);
         softAssert.assertThat(driver.findElement(By.xpath("//tbody/tr[3]/td[2]")).getText()).isEqualTo(gender);
         softAssert.assertThat(driver.findElement(By.xpath("//tbody/tr[4]/td[2]")).getText()).isEqualTo(mobile);
         softAssert.assertThat(driver.findElement(By.xpath("//tbody/tr[5]/td[2]")).getText()).isEqualTo(birthday);
-        softAssert.assertThat(driver.findElement(By.xpath("//tbody/tr[6]/td[2]")).getText()).isEqualTo(subjectFirst+", "+subjectSecond);
-        softAssert.assertThat(driver.findElement(By.xpath("//tbody/tr[7]/td[2]")).getText()).isEqualTo(hobbyFirst+", "+hobbySecond);
+        softAssert.assertThat(driver.findElement(By.xpath("//tbody/tr[6]/td[2]")).getText()).isEqualTo(subjectFirst + ", " + subjectSecond);
+        softAssert.assertThat(driver.findElement(By.xpath("//tbody/tr[7]/td[2]")).getText()).isEqualTo(hobbyFirst + ", " + hobbySecond);
         softAssert.assertThat(driver.findElement(By.xpath("//tbody/tr[8]/td[2]")).getText()).isEqualTo(picture);
         softAssert.assertThat(driver.findElement(By.xpath("//tbody/tr[9]/td[2]")).getText()).isEqualTo(address);
-        softAssert.assertThat(driver.findElement(By.xpath("//tbody/tr[10]/td[2]")).getText()).isEqualTo(studentsState+" "+studentsCity);
+        softAssert.assertThat(driver.findElement(By.xpath("//tbody/tr[10]/td[2]")).getText()).isEqualTo(studentsState + " " + studentsCity);
 
         softAssert.assertAll();
 
